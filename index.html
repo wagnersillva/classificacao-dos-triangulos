@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de triagulo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- JS -->
+    <script src="javascript.js" ></script> 
+</head>
+<body id="Body" onload="iniciarpagina()">
+    <section id="escholadotema">
+        <p>Escolha o tema da página</p>
+        <div>
+            <button onclick="mudartema(1)" id="tema1">TEMA 1</button>
+            <button onclick="mudartema(2)" id="tema2">TEMA 2</button>
+            <button onclick="mudartema(3)" id="tema3">TEMA 3</button>
+            <button onclick="mudartema(4)" id="tema4">TEMA 4</button>
+            <button onclick="mudartema(5)" id="tema5">TEMA 5</button>
+            <button onclick="mudartema(6)" id="tema6">TEMA 6</button>
+        </div>
+        
+    </section>
+    <section>  
+        <h1 style="text-align: center;">Tipos de triagulo</h1><br>
+        <P style="text-align: center;">EQUILÁTERO | ISÓSCELES | ESCALENO</P><br>
+        <p style="text-align: center;">Informe o comprimento de cada lado para descobrir qual é o tipo do triangulo.</p><br>
+        <div style="text-align: center; margin-right: 2%;">
+            <input type="number" id="ladoa" placeholder="lado a" class="lados">
+            <input type="number" id="ladob" placeholder="lado b" class="lados">
+            <input type="number" id="ladoc" placeholder="lado c" class="lados">
+            <input type="button" onclick="NomeTriangulo()" value="Gerar informações" id="botao1" class="botao" >
+            <hr>
+                <ul">
+                    <li id="nomeTriangulo"></li><br>
+                    <li id="explicacao"> </li><br>
+                    <li id="lado1Resultado"></li><br>
+                    <li id="lado2Resultado"> </li><br>
+                    <li id="lado3Resultado"></li><br>
+                    <li> <input type="button" onclick="LimparBuscar()" id="LimparBuscar" class="botao" value="Limpar Buscar" style="display: none;">   
+                </ul>  
+        </div>
+    </section>  
+    <footer>
+        <p id="rodape"></p>
+    </footer> 
+</body>
+</html>

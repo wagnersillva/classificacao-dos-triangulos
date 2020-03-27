@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 0, 0);
+}
+
+#escholadotema{
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: rgb(3, 70, 63);
+    color: #fff;
+    text-align: center;
+    font-size: 70%;
+    width: 45%;
+    margin-left: 25%;
+    border-radius: 50px;
+}
+
+#tema1{
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border: none;
+    background-color:#000000	 ;
+    color:#FFF600 ;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+
+#tema2{
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color:#FAFAFA ;
+    color: #0000f0;
+    cursor: pointer;  
+    outline: none; 
+    border-radius: 10px;
+}
+
+
+#tema3{
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color:black ;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+#tema4{
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color:#000000	 ;
+    color: #BBFF00;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+
+#tema5{
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color:#787828 ;
+    color:#000000;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+#tema6{
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color:#787828 ;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+
+.lados {
+    outline: none;
+    color: rgb(255, 255, 255);
+    height: 25px;
+    width: 110px;
+    text-align: center;
+    border: solid 1px greenyellow;
+    background-color: rgb(58, 0, 0);
+    border-radius: 5px;
+}
+.lados:hover{
+    border: solid 1px rgb(255, 47, 57);
+    cursor: text;
+}
+
+.botao {
+    outline: none;
+    color: rgb(255, 255, 255);
+    height: 29px;
+    border: solid 1px greenyellow;
+    padding: 0px 10px;
+    background-color: rgb(58, 0, 0);
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.botao:hover{
+    border: solid 1px rgb(47, 168, 255);
+    cursor: pointer;
+
+}
+
+#LimparBuscar {
+    
+    border-radius: 20px;
+}
+
+hr {
+    text-align: center;
+    width: 250px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: solid 1px greenyellow;
+}
+
+li {
+    list-style-type: none; 
+    margin-left: 2%;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-size: 10pt;
+    padding-top: 10%;
+    font-family:"Abel",Sans-Serif;
+}
