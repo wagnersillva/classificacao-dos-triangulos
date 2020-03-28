@@ -4,7 +4,9 @@
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de triagulo</title>
+    <title>Tipos de triangulo</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon-branco-fundo-vermelho-dois.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- JS -->
@@ -12,7 +14,7 @@
 </head>
 <body id="Body" onload="iniciarpagina()">
     <section id="escholadotema">
-        <p>Escolha o tema da página</p>
+        <p id="escolhaotema">Escolha o tema da página</p>
         <div>
             <button onclick="mudartema(1)" id="tema1">TEMA 1</button>
             <button onclick="mudartema(2)" id="tema2">TEMA 2</button>
@@ -21,16 +23,22 @@
             <button onclick="mudartema(5)" id="tema5">TEMA 5</button>
             <button onclick="mudartema(6)" id="tema6">TEMA 6</button>
         </div>
+        <p id="escolhaoidioma">Escolha o idioma da página</p>
+        <div>
+            <button onclick="mudarIdioma(1)" id="mudarIdioma1"><img src="bandeira-brasil.png" style="width: 25px;" ></button>
+            <button onclick="mudarIdioma(2)" id="mudarIdioma2"><img src="bandeira-usa.png" style="width: 25px;"></button>
+            <button onclick="mudarIdioma(3)" id="mudarIdioma3"><img src="bandeira-esp.png" style="width: 25px;"></button>
+        </div>
         
     </section>
     <section>  
-        <h1 style="text-align: center;">Tipos de triagulo</h1><br>
-        <P style="text-align: center;">EQUILÁTERO | ISÓSCELES | ESCALENO</P><br>
-        <p style="text-align: center;">Informe o comprimento de cada lado para descobrir qual é o tipo do triangulo.</p><br>
+        <h1 style="text-align: center;" id="tiposdetriangulo">Tipos de triângulo</h1><br>
+        <P style="text-align: center;" id="tiposdetrianguloNomes">EQUILÁTERO | ISÓSCELES | ESCALENO</P><br>
+        <p style="text-align: center;" id="informeoslados">Informe o comprimento de cada lado para descobrir qual é o tipo do triangulo.</p><br>
         <div style="text-align: center; margin-right: 2%;">
-            <input type="number" id="ladoa" placeholder="lado a" class="lados">
-            <input type="number" id="ladob" placeholder="lado b" class="lados">
-            <input type="number" id="ladoc" placeholder="lado c" class="lados">
+            <input type="number" id="ladoa" placeholder="a" class="lados">
+            <input type="number" id="ladob" placeholder="b" class="lados">
+            <input type="number" id="ladoc" placeholder="c" class="lados">
             <input type="button" onclick="NomeTriangulo()" value="Gerar informações" id="botao1" class="botao" >
             <hr>
                 <ul">
@@ -43,6 +51,9 @@
                 </ul>  
         </div>
     </section>  
+    <section>
+        
+    </section>
     <footer>
         <p id="rodape"></p>
     </footer> 
