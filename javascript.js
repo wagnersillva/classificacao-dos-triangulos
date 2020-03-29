@@ -1,5 +1,4 @@
 // CORES DOS TEMAS
-
 function mudartema(x) {
     switch (x) {
         case 1:
@@ -96,34 +95,34 @@ function mudartema(x) {
 
 }
 
+// DATA ATUAL FOOTER
 
+function iniciarpagina(){
+    let novadata = new Date;
+    let novoano = novadata.getFullYear();
+    document.getElementById('rodape1').innerHTML = ` &copy; `;
+    document.getElementById('rodape2').innerHTML = ` Koala Dev -`;
+    document.getElementById('rodape3').innerHTML = ` ${novoano} `;
+}
 
-// LIMPAR PESQUISA
+// LIMPAR BUSCA
 
 function LimparBuscar() {
 
     document.getElementById('nomeTriangulo').innerHTML = "";
     // Motivo 
     document.getElementById('explicacao').innerHTML = "";
-    // Lado 1 
-    document.getElementById('lado1Resultado').innerHTML = ``;
-    // Lado 2 
-    document.getElementById('lado2Resultado').innerHTML = ``;
-    // Lado 3 
-    document.getElementById('lado3Resultado').innerHTML = ``;
     // botao para resetar 
     document.getElementById('LimparBuscar').style.display = "none";
     // limpando input's
     document.getElementById('ladoa').value = "";
     document.getElementById('ladob').value = "";
     document.getElementById('ladoc').value = "";
-
-
 }
 
-// NOME DO TRIANGULO
-
-function NomeTriangulo() {
+ // NOME DO TRIANGULO
+            
+ function NomeTriangulo() {
     var a = Number(document.getElementById('ladoa').value);
     var b = Number(document.getElementById('ladob').value);
     var c = Number(document.getElementById('ladoc').value);
@@ -143,46 +142,26 @@ function NomeTriangulo() {
         // agora, erificar qual o tipo de triangulo
         if ((a == b) & (b == c)) {
             // nome do triangulo 
-            document.getElementById('nomeTriangulo').innerHTML = "O triangulo é: Equilátero.";
+            document.getElementById('nomeTriangulo').innerHTML = "O triângulo é: equilátero";
             // Motivo 
             document.getElementById('explicacao').innerHTML = "Motivo: Todos os lados são iguais.";
-            // Lado 1 
-            document.getElementById('lado1Resultado').innerHTML = `Lado a: ${a}`;
-            // Lado 2 
-            document.getElementById('lado2Resultado').innerHTML = `Lado b: ${b}`;
-            // Lado 3 
-            document.getElementById('lado3Resultado').innerHTML = `Lado c: ${c}`;
+            // botao para resetar 
             document.getElementById('LimparBuscar').style.display = "";
-
-
-
-
+            
         } else if (((a == b) & (b != c)) || ((a == c) & (c != b)) || ((b == c) & (c != a))) {
             // nome do triangulo 
-            document.getElementById('nomeTriangulo').innerHTML = "O triangulo é: Isósceles.";
+            document.getElementById('nomeTriangulo').innerHTML = "O triângulo é: Isósceles.";
             // Motivo 
             document.getElementById('explicacao').innerHTML = "Motivo: Dois lados são iguais.";
-            // Lado 1 
-            document.getElementById('lado1Resultado').innerHTML = `Lado a: ${a}`;
-            // Lado 2 
-            document.getElementById('lado2Resultado').innerHTML = `Lado b: ${b}`;
-            // Lado 3 
-            document.getElementById('lado3Resultado').innerHTML = `Lado c: ${c}`;
             // botao para resetar 
             document.getElementById('LimparBuscar').style.display = "";
 
 
         } else {
             // nome do triangulo 
-            document.getElementById('nomeTriangulo').innerHTML = "O triangulo é: Escaleno.";
+            document.getElementById('nomeTriangulo').innerHTML = "O triângulo é: Escaleno.";
             // Motivo 
             document.getElementById('explicacao').innerHTML = "Motivo: Todos os lados são diferentes.";
-            // Lado 1 
-            document.getElementById('lado1Resultado').innerHTML = `Lado a: ${a}`;
-            // Lado 2 
-            document.getElementById('lado2Resultado').innerHTML = `Lado b: ${b}`;
-            // Lado 3 
-            document.getElementById('lado3Resultado').innerHTML = `Lado c: ${c}`;
             // botao para resetar 
             document.getElementById('LimparBuscar').style.display = "";
 
@@ -203,11 +182,4 @@ function NomeTriangulo() {
 
     }
 
-}
-
-// DATA ATUAL FOOTER
-function iniciarpagina(){
-    let novadata = new Date;
-    let novoano = novadata.getFullYear();
-    document.getElementById('rodape').innerHTML = `&copy; Copyright Koala Dev ${novoano} `;
 }

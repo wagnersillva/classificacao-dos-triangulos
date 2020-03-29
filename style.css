@@ -92,6 +92,28 @@ body {
     border-radius: 10px;
 }
 
+#mudarIdioma1{    
+    outline: none;
+    border: none;
+    background-color: rgb(3, 70, 63);
+    cursor: pointer;
+}
+
+#mudarIdioma2{
+    outline: none;
+    border: none;
+    background-color: rgb(3, 70, 63);
+    cursor: pointer;
+}
+
+#mudarIdioma3{
+    outline: none;
+    border: none;
+    background-color: rgb(3, 70, 63);
+    cursor: pointer;
+}
+
+
 .lados {
     outline: none;
     color: rgb(255, 255, 255);
@@ -143,9 +165,20 @@ li {
 }
 
 footer {
-    color: #fff;
     text-align: center;
     font-size: 10pt;
     padding-top: 10%;
     font-family:"Abel",Sans-Serif;
+}
+
+
+#google_translate_element {
+    display: none;
+}
+.goog-te-banner-frame {
+    display: none !important;
+}
+body {
+    position: static !important;
+    top: 0 !important;
 }
