@@ -95,14 +95,15 @@ function mudartema(x) {
 
 }
 
-// DATA ATUAL FOOTER
+// DATA ATUAL E FOOTER
 
 function iniciarpagina(){
     let novadata = new Date;
     let novoano = novadata.getFullYear();
     document.getElementById('rodape1').innerHTML = ` &copy; `;
-    document.getElementById('rodape2').innerHTML = ` Koala Dev -`;
-    document.getElementById('rodape3').innerHTML = ` ${novoano} `;
+    document.getElementById('rodape2').innerHTML = ` Koala `;
+    document.getElementById('rodape3').innerHTML = `Dev -`;
+    document.getElementById('rodape4').innerHTML = ` ${novoano} `;
 }
 
 // LIMPAR BUSCA
